@@ -1,11 +1,10 @@
-version: "3.9"
 services:
-
-  postgres_13:
-    image: "postgres:13"
+  postgres_16:
+    image: "postgres:16"
+    container_name: "postgres_16"
     ports:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: "postgres"
     volumes:
-      - "./volumes/postgres_13/data:/var/lib/postgresql/data"
+      - "./volumes/postgres_16/data:/var/lib/postgresql/data"
